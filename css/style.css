@@ -38,7 +38,7 @@ opacity: .8;}
 
 ol {padding-left: 20px;}
 
-ol li {padding: 5px;color:#000;}
+ol li {padding: 5px; color:#000;}
 
 ol li:nth-child(even){background: #dfdfdf;}
 
@@ -52,7 +52,7 @@ li:hover{
 	display: none;
 }
 
-li > crossOutButton {
+.crossButtn {
 	background: none;
 	border: none;
 	float: right;
