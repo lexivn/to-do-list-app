@@ -37,6 +37,24 @@
 
 // }
 
+
+let input = document.getElementById("input");
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("button").click();
+  }
+});
+
+// let input = $('#input');
+// input.keyup( (e) => {  
+//   if ( e.which === 13) {
+//     $("#button").click();
+//     //alert("Pressed Enter");        
+//   }  
+// });
+
+
 function newItem() {
 
   //jQuery
@@ -64,8 +82,8 @@ function newItem() {
   });
 
   //3. Adding the delete button "X": 
-  let crossOutButton = $('<crossOut></crossOut>');
-  crossOutButton.append(document.createTextNode('x'));
+  let crossOutButton = $('<crossOut class="crossButtn"></crossOut>');
+  crossOutButton.append(document.createTextNode("X"));
   li.append(crossOutButton);
 
   crossOutButton.on("click", deleteListItem);
